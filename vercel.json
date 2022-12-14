@@ -1,7 +1,7 @@
 {
 	"rewrites": [
 		{
-			"source": "/social",
+			"source": "/social/",
 			"destination": "https://donoteffort-com-social.vercel.app"
 		},
 		{
