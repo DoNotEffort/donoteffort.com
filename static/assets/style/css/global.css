@@ -5,6 +5,10 @@ body{
 	color: #fff;
 }
 
+.st{
+	color: #9271e7;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
