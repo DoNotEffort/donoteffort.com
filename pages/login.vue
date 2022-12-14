@@ -30,6 +30,7 @@ export default {
     setCookie({ data }) {
       this.$cookies.set('token', data, {
         domain: '.donoteffort.com',
+        path: '/',
         maxAge: 60 * 60 * 24 * 7,
       })
     },
