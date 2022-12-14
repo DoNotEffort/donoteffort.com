@@ -3,6 +3,10 @@
 		{
 			"source": "/social",
 			"destination": "https://donoteffort-com-social.vercel.app"
+		},
+		{
+			"source": "/social/:path*",
+			"destination": "https://donoteffort-com-social.vercel.app/:path*"
 		}
 	]
 }
