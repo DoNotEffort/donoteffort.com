@@ -1,6 +1,10 @@
 {
 	"rewrites": [
 		{
+			"source": "/social",
+			"destination": "https://donoteffort-com-social.vercel.app/"
+		},
+		{
 			"source": "/social/",
 			"destination": "https://donoteffort-com-social.vercel.app/"
 		},

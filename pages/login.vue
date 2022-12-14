@@ -39,8 +39,8 @@ export default {
 
       this.setCookie({ data: token })
 
-      app in this.allowedApps
-        ? this.$router.push(this.allowedApps[app].path + "/")
+      app in this.allowedApps 
+        ? window.location.href = this.allowedApps[app].path + "/"
         : this.$router.push('/')
     },
   },
