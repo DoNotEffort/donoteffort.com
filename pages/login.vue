@@ -40,7 +40,7 @@ export default {
       this.setCookie({ data: token })
 
       app in this.allowedApps
-        ? this.$router.push(this.allowedApps[app].path)
+        ? this.$router.push(this.allowedApps[app].path + "/")
         : this.$router.push('/')
     },
   },
