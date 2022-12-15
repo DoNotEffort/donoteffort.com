@@ -20,7 +20,7 @@ export default {
       isLoading: true,
     }
   },
-  beforeMount() {
+  mounted() {
     const token = this.$route.query.token
     const app = this.$route.query.app
     this.setCookie({ data: token })
