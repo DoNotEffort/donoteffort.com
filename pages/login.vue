@@ -33,7 +33,7 @@ export default {
       const domain =
         process.env.NODE_ENV === 'development'
           ? 'localhost'
-          : `.${process.env.FRONTEND_BASE_URL}`
+          : `.${process.env.VERCEL_URL}`
       console.log({ domain })
       this.$cookies.set('token', data, {
         domain,
