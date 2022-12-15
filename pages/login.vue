@@ -33,7 +33,7 @@ export default {
       const domain =
         process.env.NODE_ENV === 'development'
           ? 'localhost'
-          : `.${process.env.NUXT_ENV_VERCEL_URL}`
+          : `.${window.location.host.split(':')[0]}`
       console.log({ domain })
       this.$cookies.set('token', data, {
         domain,
