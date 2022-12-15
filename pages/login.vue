@@ -20,22 +20,22 @@ export default {
       isLoading: true,
     }
   },
-  async mounted() {
+  mounted() {
     const token = this.$route.query.token
     const app = this.$route.query.app
-    await this.setCookie({ data: token })
+    this.setCookie({ data: token })
     app in this.allowedApps
       ? (window.location.href = this.allowedApps[app].path + '/')
       : this.$router.push('/')
   },
   methods: {
-    async setCookie({ data }) {
+    setCookie({ data }) {
       const domain =
         process.env.NODE_ENV === 'development'
           ? 'localhost'
           : `.${process.env.FRONTEND_BASE_URL}`
-
-      await this.$cookies.set('token', data, {
+      console.log({ domain })
+      this.$cookies.set('token', data, {
         domain,
         path: '/',
         maxAge: 60 * 60 * 24 * 7,
