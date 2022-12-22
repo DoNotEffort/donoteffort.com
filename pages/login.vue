@@ -14,7 +14,7 @@ export default {
     return {
       allowedApps: {
         social: {
-          path: '/social',
+          path: '/products/social',
         },
       },
       isLoading: true,
