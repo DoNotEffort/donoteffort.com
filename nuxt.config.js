@@ -20,6 +20,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'facebook-domain-verification', content: 'nf57akerxnm4ieg2yqh1zb07zso1oj' },
       { hid: 'description', name: 'description', content: 'Manage your social media accounts in one place. ' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
